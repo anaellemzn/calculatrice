@@ -31,8 +31,7 @@ body{
   text-align: right;
   background-color: white;
   color: #555;
-  border: 6px;
-  border-bottom:solid #4840b3; 
+  border-bottom:5px solid #4840b3; 
 }
 
 .buttons {
@@ -50,31 +49,34 @@ button {
   font-size: 24px;
   color: black;
   background-color: gainsboro;
-  border: none;
+  border: 1px;
   border-radius: 30px;
+  border-color: #0750bf;
   cursor: pointer;
   outline: none;
 }
 
 button:hover {
-  background-color: beige;
+  background-color: #e0da84 ;
 }
 .parenthese {
-  background-color: blue;
+  background-color: #FF6961;
 }
 
 .clear {
-  background-color: #ff5c5c;
+  background-color: orange;
 }
 
 .operateur {
-  background-color: #f8c84e;
-  color: #555;
+  background-color:#058ce8;
+  color: black;
+  font-size:26px;
 }
 
 .nombre {
+  border-color: #4840b3;
   background-color: #d2d2d2;
-  color: #555;
+  color: black;
 }
 
 .zero {
@@ -88,7 +90,7 @@ button:hover {
 }
 
 .egal {
-  background-color: #6b8e23;
+  background-color: #0750bf;
   font-size: 36px;
   border-radius: 4px;
 }
