@@ -1,0 +1,94 @@
+div{
+  border: 7px;
+ background-color: whitesmoke;
+}
+
+body{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(fond2.gif);
+
+}
+
+.calculatrice {
+  width: 360px;
+  margin: 50px auto;
+  border-radius: 20px;
+  background-color: white;
+  border-style: solid;
+  border: 50px 50px 50px 50px;
+  
+  border-color: #4840b3;
+  box-shadow:30px 30px 20px 10px rgba(0,0,0,0.2);
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.aff1, .aff2 {
+  height: 60px;
+  padding: 10px;
+  font-size: 50px;
+  text-align: right;
+  background-color: white;
+  color: #555;
+  border: 6px;
+  border-bottom:solid #4840b3; 
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  justify-items: center;
+  align-items: center;
+  padding: 10px;
+}
+
+button {
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  color: black;
+  background-color: gainsboro;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: beige;
+}
+.parenthese {
+  background-color: blue;
+}
+
+.clear {
+  background-color: #ff5c5c;
+}
+
+.operateur {
+  background-color: #f8c84e;
+  color: #555;
+}
+
+.nombre {
+  background-color: #d2d2d2;
+  color: #555;
+}
+
+.zero {
+  grid-column: 1;
+}
+
+.comma {
+  background-color: #d2d2d2;
+  font-size: 28px;
+  color: #555;
+}
+
+.egal {
+  background-color: #6b8e23;
+  font-size: 36px;
+  border-radius: 4px;
+}
