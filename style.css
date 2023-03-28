@@ -59,7 +59,10 @@ button {
 button:hover {
   background-color: #e0da84 ;
 }
-.parenthese {
+.parenthese-ouvrante {
+  background-color: #FF6961;
+}
+.parenthese-fermante {
   background-color: #FF6961;
 }
 
@@ -91,6 +94,7 @@ button:hover {
 
 .egal {
   background-color: #0750bf;
+  width: 60px;
   font-size: 36px;
   border-radius: 4px;
 }
