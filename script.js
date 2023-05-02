@@ -1,5 +1,5 @@
 class Calculatrice {
-    constructor(aff1Selector, aff2Selector, buttonSelector) {
+    constructor() {
       this.aff1 = document.querySelector(aff1Selector);
       this.aff2 = document.querySelector(aff2Selector);
       this.buttons = document.querySelectorAll(buttonSelector);
@@ -21,10 +21,17 @@ class Calculatrice {
         // Évaluer l'expression et afficher le résultat
         var result = eval(expression);
         this.aff2.textContent = result;
+        console.log("Envoi de succès au serveur");
+        let timeTakenMs=performance.now()-this.tempsDebut;
+        this.envoieSucces(timeTakenMs);
+        this.tempsDebut=0; // On reset le temps du début
       } catch (error) {
         // Si une erreur se produit, afficher un message d'erreur
         this.aff2.textContent = "Erreur";
+        console.log("Envoi d'une erreur au serveur");
+        this.envoieErreur();
       }
+      this.reset();
     }
   
     // Fonction pour supprimer le dernier caractère de l'affichage
